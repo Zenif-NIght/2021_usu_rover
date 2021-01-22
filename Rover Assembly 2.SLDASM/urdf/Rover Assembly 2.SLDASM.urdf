@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Rover Assembly 2.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.35342 0.48833 0.61319"
+        rpy="0 0 0" />
+      <mass
+        value="10.531" />
+      <inertia
+        ixx="0.22203"
+        ixy="-8.4587E-05"
+        ixz="-1.1327E-05"
+        iyy="0.21835"
+        iyz="-1.7094E-05"
+        izz="0.25599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_rocker">
+    <inertial>
+      <origin
+        xyz="-0.81091 1.0934 0.019066"
+        rpy="0 0 0" />
+      <mass
+        value="2.557" />
+      <inertia
+        ixx="0.029439"
+        ixy="0.01615"
+        ixz="0.00024612"
+        iyy="0.021347"
+        iyz="0.00031281"
+        izz="0.045676" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_rocker.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_rocker.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rocker"
+    type="continuous">
+    <origin
+      xyz="-1.4074 -0.35368 0.024804"
+      rpy="1.5708 -0.78683 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_rocker" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="30"
+      upper="60"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44264531499028E-07 -5.3245467069446E-07 -0.0469025973486539"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000549456178" />
+      <inertia
+        ixx="0.00790208664934918"
+        ixy="-3.12572373580965E-08"
+        ixz="1.01231934461399E-08"
+        iyy="0.00790208861782688"
+        iyz="9.58919514284504E-09"
+        izz="0.0128630752677592" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.75632 0.9 0.16878"
+      rpy="0 0 -0.13272" />
+    <parent
+      link="right_rocker" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_bogie">
+    <inertial>
+      <origin
+        xyz="-1.25399979674374 1.4099437561266 -0.023393645725068"
+        rpy="0 0 0" />
+      <mass
+        value="3.06417033961883" />
+      <inertia
+        ixx="0.00600893400377177"
+        ixy="0.00021529853230527"
+        ixz="-1.37799817244233E-07"
+        iyy="0.00600971638354491"
+        iyz="-3.8427275534041E-08"
+        izz="0.00289375986255757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_bogie.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_bogie.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_bogie"
+    type="continuous">
+    <origin
+      xyz="0.020293 0.016574 0.09525"
+      rpy="0 0 0.013829" />
+    <parent
+      link="right_rocker" />
+    <child
+      link="right_bogie" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="30"
+      upper="60"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_mid_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44268320745722E-07 -5.32459587920808E-07 -0.0469025973475486"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000549473139" />
+      <inertia
+        ixx="0.0079020864731556"
+        ixy="-3.12155306174964E-08"
+        ixz="1.01231906452508E-08"
+        iyy="0.00790208879428727"
+        iyz="9.58925982656433E-09"
+        izz="0.0128630752679955" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_mid_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_mid_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_mid_wheel"
+    type="continuous">
+    <origin
+      xyz="-1.0922 1.2359 0.14246"
+      rpy="0 0 -2.183" />
+    <parent
+      link="right_bogie" />
+    <child
+      link="right_mid_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_back_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44267895780104E-07 -5.32459359048332E-07 -0.0469025973475486"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000549473139" />
+      <inertia
+        ixx="0.00790208659750707"
+        ixy="-3.10835136549761E-08"
+        ixz="1.0123190645669E-08"
+        iyy="0.0079020886699358"
+        iyz="9.58925982673846E-09"
+        izz="0.0128630752679955" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_back_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_back_wheel"
+    type="continuous">
+    <origin
+      xyz="-1.4281 1.5718 0.14246"
+      rpy="0 0 -2.4482" />
+    <parent
+      link="right_bogie" />
+    <child
+      link="right_back_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_rocker">
+    <inertial>
+      <origin
+        xyz="0.042621809438484 -0.275029929226345 -0.0879944263794068"
+        rpy="0 0 0" />
+      <mass
+        value="2.55705715527854" />
+      <inertia
+        ixx="0.0294391076875341"
+        ixy="0.0161527361043319"
+        ixz="-0.000245002839169288"
+        iyy="0.0213502141996567"
+        iyz="-0.000312993680082263"
+        izz="0.0456796345552872" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_rocker.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_rocker.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rocker"
+    type="continuous">
+    <origin
+      xyz="0.1643 -0.80975 0.38666"
+      rpy="1.5708 -0.78267 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_rocker" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="30"
+      upper="60"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44268692170835E-07 -5.32456145396765E-07 -0.0469025977019983"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000540264623" />
+      <inertia
+        ixx="0.00790208660427781"
+        ixy="-3.12655633917525E-08"
+        ixz="1.01231938453442E-08"
+        iyy="0.00790208860772888"
+        iyz="9.58919552199951E-09"
+        izz="0.0128630752266573" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel"
+    type="continuous">
+    <origin
+      xyz="0.097227 -0.46846 -0.23771"
+      rpy="3.1416 0 -0.18965" />
+    <parent
+      link="left_rocker" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_bogie">
+    <inertial>
+      <origin
+        xyz="-0.399230549032441 0.0445754930228794 -0.0719802807349093"
+        rpy="0 0 0" />
+      <mass
+        value="3.07958561616541" />
+      <inertia
+        ixx="0.00601120152838732"
+        ixy="0.000215866510861953"
+        ixz="-1.06697438297909E-07"
+        iyy="0.00601108589158861"
+        iyz="-5.61514944211105E-07"
+        izz="0.0028969700830781" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_bogie.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_bogie.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_bogie"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.070466"
+      rpy="0 0 0.0082484" />
+    <parent
+      link="left_rocker" />
+    <child
+      link="left_bogie" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="30"
+      upper="60"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_mid_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44268233537704E-07 -5.32459574834054E-07 -0.0469025964579795"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000542408227" />
+      <inertia
+        ixx="0.00790208654763833"
+        ixy="-3.11219509904168E-08"
+        ixz="1.01231896677527E-08"
+        iyy="0.00790208885561194"
+        iyz="9.5892588697143E-09"
+        izz="0.0128630754031923" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_mid_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_mid_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_mid_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.23775 -0.12983 -0.23771"
+      rpy="3.1416 0 2.3245" />
+    <parent
+      link="left_bogie" />
+    <child
+      link="left_mid_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_back_wheel">
+    <inertial>
+      <origin
+        xyz="-5.44268239324741E-07 -5.32459580648847E-07 -0.0469025977008928"
+        rpy="0 0 0" />
+      <mass
+        value="2.02000540281584" />
+      <inertia
+        ixx="0.0079020864280842"
+        ixy="-3.12238566471407E-08"
+        ixz="1.01231910342364E-08"
+        iyy="0.00790208878418926"
+        iyz="9.58926020663257E-09"
+        izz="0.0128630752268936" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_back_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_back_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_back_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.57363 0.20605 -0.23771"
+      rpy="3.1416 0 0.47784" />
+    <parent
+      link="left_bogie" />
+    <child
+      link="left_back_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="diff_bar">
+    <inertial>
+      <origin
+        xyz="5.38439393071855E-09 0.0129769965543086 1.75103709310065E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.239830691396192" />
+      <inertia
+        ixx="5.78318679148072E-05"
+        ixy="9.77669848780417E-12"
+        ixz="6.8232178892411E-13"
+        iyy="0.00333447857769994"
+        iyz="-4.42014945787076E-12"
+        izz="0.00327883771638508" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/diff_bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/diff_bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="diff_bar"
+    type="continuous">
+    <origin
+      xyz="0.2393 -0.61618 0.43883"
+      rpy="1.5708 0 -1.5718" />
+    <parent
+      link="base_link" />
+    <child
+      link="diff_bar" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="3"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_Link">
+    <inertial>
+      <origin
+        xyz="-9.24496030840771E-08 -2.50442826144059E-07 0.0398832682138139"
+        rpy="0 0 0" />
+      <mass
+        value="0.00704922863068679" />
+      <inertia
+        ixx="1.07088647465252E-06"
+        ixy="3.11088551410597E-10"
+        ixz="-9.61181175761397E-12"
+        iyy="1.06976282890641E-06"
+        iyz="3.2631305958919E-12"
+        izz="1.47787150399939E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/left_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_Link"
+    type="floating">
+    <origin
+      xyz="0.24998 0.02627 -0.0024102"
+      rpy="0.0024918 -0.011527 -2.6283" />
+    <parent
+      link="diff_bar" />
+    <child
+      link="left_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_Link">
+    <inertial>
+      <origin
+        xyz="-8.04752717353807E-07 0.0394834633815591 -2.28591996664917E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00704923381209292" />
+      <inertia
+        ixx="1.06991760465695E-06"
+        ixy="-1.20075442489953E-11"
+        ixz="-3.7867419387581E-09"
+        iyy="1.47787163680688E-07"
+        iyz="-5.84704381589768E-12"
+        izz="1.07073300950848E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.956862745098039 0.956862745098039 0.956862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover Assembly 2.SLDASM/meshes/right_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_Link"
+    type="floating">
+    <origin
+      xyz="-0.24999 0.026274 -0.0019148"
+      rpy="1.5781 -0.0073408 -1.6379" />
+    <parent
+      link="diff_bar" />
+    <child
+      link="right_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'right_rocker', 'right_wheel', 'right_bogie', 'right_mid_wheel', 'right_back_wheel', 'left_rocker', 'left_wheel', 'left_bogie', 'left_mid_wheel', 'left_back_wheel', 'diff_bar', 'left_Link', 'right_Link', ]
