@@ -44,10 +44,11 @@ catkin_make
 _For more examples and usage, please refer to the [Wiki][wiki]._
 ## Running Sub-Modules 
 ### GPS set up 
-@ David Allen -> could you add your pictures of the GPS setup HERE
+@ David Allen -> could you add your pictures of the GPS setup
 
-A lot of help came from "https://github.com/Combinacijus/Samana-Autonomous-Robot/tree/d902287d01b96e2dc39b350da39b125db051c57d/Arduino"
+CLick [HERE](https://github.com/Combinacijus/Samana-Autonomous-Robot/tree/d902287d01b96e2dc39b350da39b125db051c57d/Arduino) to see a good example Repo
 
+This [LINK](https://github.com/Combinacijus/Samana-Autonomous-Robot/blob/d902287d01b96e2dc39b350da39b125db051c57d/Arduino/gps_odom_node/gps_odom_node.ino) was the most helpful 
 
 
 
