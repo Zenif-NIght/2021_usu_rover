@@ -87,6 +87,8 @@ position_covariance: [4.150517416584649e+19, 0.0, 0.0, 0.0, 4.150517416584649e+1
 position_covariance_type: 1
 ---
 
+https://lastminuteengineers.com/neo6m-gps-arduino-tutorial/
+
 ```
 
 
