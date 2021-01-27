@@ -30,6 +30,63 @@ SSH
 ```sh
 git clone git@github.com:Zenif-NIght/2021_usu_rover.git
 ```
+## Install ROS systems
+
+To install, use
+
+	sudo apt-get install python-wstool	
+
+or when that is not possible, fall back to pip:
+
+	sudo pip install -U wstool	
+
+<!-- ## Create a catkin Workspace with wstool
+	mkdir 2021_usu_rover 	
+
+    cd 2021_usu_rover  -->
+
+## Initialize the Workspace from a rosinstall File
+<!-- 
+      wstool init src  
+      -->
+
+
+cd to the src folder
+
+    cd src
+
+<!-- add the ```rover_project.rosinstall``` file to add to the ``` 2021_usu_rover/src``` folder  -->
+
+
+    wstool merge rover_project.rosinstall
+
+## Updating the Workspace
+
+    wstool up
+
+This will update/download all the repositories 
+
+(you will have to have the SSH key set up to the github/gutlab depending on what is in the ```rover_project.rosinstall```)
+
+
+## Running The Project
+
+
+Go up a directorry and build the project to ```2021_usu_rover```
+
+    cd ..
+    catkin_make
+
+sorce the devel 😈
+
+    source devel/setup.bash
+
+run the launch file
+
+    roslaunch dummy_planner go_to_goal.launch 
+
+After a few seconds you will see RViz 
+
 
 ## Running The Robot
 
@@ -92,9 +149,9 @@ https://lastminuteengineers.com/neo6m-gps-arduino-tutorial/
 ```
 
 
-## Development setup
+<!-- ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms. -->
 
 <!-- ```sh
 make install
@@ -116,7 +173,7 @@ npm test
 * 0.0.1
     * Work in progress
 
-## Meta
+<!-- ## Meta
 
 Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
 
@@ -130,7 +187,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+5. Create a new Pull Request -->
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
