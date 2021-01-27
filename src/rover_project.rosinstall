@@ -2,35 +2,35 @@
 
 # MY repos
 - git: {local-name: dummy_planner, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/student_groups/allred_christopher/final_project.git', 
+        uri: 'git@github.com:Zenif-NIght/dummy_planner.git', 
         version: master}
 
 # main repos
 - git: {local-name: turtle/joystick, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/turtle_joy.git', 
+        uri: 'git@github.com:Zenif-NIght/turtle_joystick.git', 
         version: master}
 
 # Robot development repos
 - git: {local-name: low_level_control, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/low_level_control.git', 
+        uri: 'git@github.com:Zenif-NIght/low_level_control.git', 
         version: master}
 - git: {local-name: setup_and_launch, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/setup_and_launch.git', 
+        uri: 'git@github.com:Zenif-NIght/setup_and_launch.git', 
         version: master}
 - git: {local-name: high_level_control, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/high_level_control.git', 
+        uri: 'git@github.com:Zenif-NIght/high_level_control.git', 
         version: master}
 - git: {local-name: topology_emulator, 
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/topology_emulator.git', 
+        uri: 'git@github.com:Zenif-NIght/topology_emulator.git', 
         version: master}
         
 # Turtlebot repos
 - git: {local-name: turtle/turtlebot3_sim,
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/turtlebot3_simulations.git',
+        uri: 'git@github.com:Zenif-NIght/turtlebot3_sim.git',
         version: master}
 - git: {local-name: turtle/turtlebot_msgs,
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/turtlebot_msgs.git',
+        uri: 'git@github.com:Zenif-NIght/turtlebot_msgs.git',
         version: master}
 - git: {local-name: turtle/turtlebot3,
-        uri: 'git@gitlab.com:utahstate/20-fall-mobile-robotics/simple-sim/turtlebot3.git',
+        uri: 'git@github.com:Zenif-NIght/turtlebot3.git',
         version: master}

@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/jawa/2021_usu_rover/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/jawa/2021_usu_rover/src/turtle/joystick/include/**",
+        "/home/jawa/2021_usu_rover/src/low_level_control/controllers/include/**",
+        "/home/jawa/2021_usu_rover/src/low_level_control/dynamic_models/include/**",
+        "/home/jawa/2021_usu_rover/src/high_level_control/go2goal/include/**",
+        "/home/jawa/2021_usu_rover/src/low_level_control/occupancy_grid/include/**",
+        "/home/jawa/2021_usu_rover/src/topology_emulator/rebroadcasters/position_rebroadcaster/include/**",
+        "/home/jawa/2021_usu_rover/src/topology_emulator/rebroadcasters/topic_rebroadcaster/include/**",
+        "/home/jawa/2021_usu_rover/src/turtle/turtlebot3_sim/turtlebot3_fake/include/**",
+        "/home/jawa/2021_usu_rover/src/turtle/turtlebot3_sim/turtlebot3_gazebo/include/**",
+        "/home/jawa/2021_usu_rover/src/turtle/turtlebot3/turtlebot3_slam/include/**",
+        "/home/jawa/2021_usu_rover/src/low_level_control/turtlebot_sim/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
