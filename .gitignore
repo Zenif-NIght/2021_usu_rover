@@ -1,4 +1,6 @@
 *.log
+devel/
+build/
 
 src/low_level_control
 src/dummy_planner
@@ -6,5 +8,3 @@ src/high_level_control
 src/setup_and_launch
 src/topology_emulator
 src/turtle
-devel/
-build/
